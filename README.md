@@ -1,4 +1,4 @@
-# Pertemuan 06 - Nested Loop, Pola, Akumulasi, dan Pencacahan
+﻿# Pertemuan 06 - Nested Loop, Pola, Akumulasi, dan Pencacahan
 
 ## Identitas
 
@@ -26,15 +26,15 @@ Pertemuan ini bertujuan untuk:
 ## Struktur Folder
 
     pertemuan-06-nested-loop-2225250135/
-    ├── README.md
-    ├── .gitignore
-    ├── latihan/
-    │   ├── 01_pasangan_indeks.py
-    │   ├── 02_pola_segitiga.py
-    │   ├── 03_jumlah_per_baris.py
-    │   └── 04_hitung_pasangan.py
-    └── tugas/
-        └── tabel_perkalian_dan_statistik.py
+    â”œâ”€â”€ README.md
+    â”œâ”€â”€ .gitignore
+    â”œâ”€â”€ latihan/
+    â”‚   â”œâ”€â”€ 01_pasangan_indeks.py
+    â”‚   â”œâ”€â”€ 02_pola_segitiga.py
+    â”‚   â”œâ”€â”€ 03_jumlah_per_baris.py
+    â”‚   â””â”€â”€ 04_hitung_pasangan.py
+    â””â”€â”€ tugas/
+        â””â”€â”€ tabel_perkalian_dan_statistik.py
 
 ---
 
@@ -97,7 +97,7 @@ Hasil:
 
 Banyak pasangan yang dihasilkan adalah:
 
-    3 × 4 = 12
+    3 Ã— 4 = 12
 
 ---
 
@@ -145,7 +145,7 @@ Hasil:
 
 Contohnya, untuk baris pertama:
 
-    1 × 1 + 1 × 2 + 1 × 3
+    1 Ã— 1 + 1 Ã— 2 + 1 Ã— 3
     = 1 + 2 + 3
     = 6
 
@@ -189,7 +189,7 @@ File:
 
 ## Deskripsi
 
-Program membuat tabel perkalian berukuran `n × n` menggunakan nested loop.
+Program membuat tabel perkalian berukuran `n Ã— n` menggunakan nested loop.
 
 Program juga menghitung:
 
@@ -382,7 +382,7 @@ Untuk setiap satu iterasi loop luar, loop dalam juga berjalan sebanyak `n` kali.
 
 Dengan demikian, badan loop dalam berjalan sebanyak:
 
-    n × n = n²
+    n Ã— n = nÂ²
 
 kali.
 
@@ -390,7 +390,7 @@ Pernyataan:
 
     hasil = i * j
 
-dieksekusi sebanyak `n²` kali.
+dieksekusi sebanyak `nÂ²` kali.
 
 Contoh:
 
@@ -400,7 +400,7 @@ Jika:
 
 maka:
 
-    3 × 3 = 9
+    3 Ã— 3 = 9
 
 Sehingga pernyataan `hasil = i * j` dieksekusi sebanyak 9 kali.
 
@@ -444,7 +444,7 @@ Pernyataan:
 
 dieksekusi sebanyak:
 
-    n²
+    nÂ²
 
 kali.
 
@@ -494,7 +494,7 @@ Bagian nested loop akan melakukan operasi paling banyak.
 
 Hal ini karena loop tersebut memiliki jumlah eksekusi sebesar:
 
-    n²
+    nÂ²
 
 Semakin besar `n`, semakin banyak operasi perkalian, penjumlahan, dan pengecekan kondisi yang dilakukan.
 
@@ -513,7 +513,7 @@ Nested loop dapat digunakan untuk:
 - Membuat tabel perkalian.
 - Menghitung statistik dari hasil perulangan.
 
-Pada Tugas 3, nested loop digunakan untuk membuat tabel perkalian `n × n`. Program juga menerapkan akumulator `total_baris` dan `total_semua`, serta counter `count_genap`.
+Pada Tugas 3, nested loop digunakan untuk membuat tabel perkalian `n Ã— n`. Program juga menerapkan akumulator `total_baris` dan `total_semua`, serta counter `count_genap`.
 
 Berdasarkan pengujian `n = 1`, `n = 2`, dan `n = 3`, program menghasilkan keluaran yang sesuai dengan hasil yang diharapkan.
 
@@ -527,8 +527,3 @@ Salah satu kesalahan yang dapat terjadi adalah menempatkan:
 
     total_semua = 0
 
-di dalam loop luar. Jika dilakukan, nilai total akan kembali menjadi `0` setiap kali berpindah baris sehingga total keseluruhan menjadi salah.
-
-Untuk menghitung jumlah setiap baris, `total_baris` justru harus direset di dalam loop luar karena setiap baris membutuhkan perhitungan yang terpisah.
-
-Dari latihan ini, nested loop dapat dipahami sebagai perulangan yang menjalankan seluruh perulangan dalam untuk setiap satu iterasi perulangan luar. Pemahaman terhadap posisi loop, akumulator, dan counter penting agar hasil program sesuai dengan tujuan yang diinginkan.
