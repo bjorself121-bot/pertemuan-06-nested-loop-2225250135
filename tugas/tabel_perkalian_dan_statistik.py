@@ -37,3 +37,4 @@ for i in range(1, n + 1):
 print()
 print(f"Total keseluruhan = {total_semua}")
 print(f"Banyak hasil genap = {count_genap}")
+# Statistik akhir: total keseluruhan dan jumlah hasil genap ditampilkan setelah tabel selesai.
